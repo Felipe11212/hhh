@@ -1,0 +1,67 @@
+.lista{
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 20px;
+    padding: 20px;
+    width: 700px;
+    
+}
+/*
+btn1= botones de editar y eliminar 
+btn2= boton de descarga (documento de excel)
+btn3= boton de actualizar datos
+btn4= botn de PDF
+*/
+.btn1{
+    background-color: black;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 5px;
+    transition: 2s;
+    padding: 5px;
+}
+.btn1:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+
+.btn2{
+    background-color: rgb(59, 154, 0);
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 5px;
+    transition: 2s;
+    padding: 5px;
+}
+.btn2:hover{
+    background-color: aliceblue;
+    color: rgb(45, 136, 0);
+}
+
+
+.btn3{
+    background-color: rgb(60, 255, 0);
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 5px;
+    transition: 2s;
+    padding: 5px;
+}
+.btn3:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(88, 255, 4);
+}
+
+
+.btn4{
+    background-color: rgb(255, 0, 0);
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 5px;
+    transition: 2s;
+    padding: 5px;
+}
+.btn4:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 4, 4);
+}

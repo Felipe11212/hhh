@@ -1,0 +1,254 @@
+html{
+  background-color: #000000;
+}
+
+/* RESET Y BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: system-ui, sans-serif;
+  background: 
+    linear-gradient(to bottom right, rgba(147, 190, 255, 0.219), rgba(255, 255, 255, 0.26)),
+    url("../img/im2.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+
+
+/* NAVBAR */
+header {
+  background: linear-gradient(to right, #003973, #0058a3);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #e3f2fd;
+  transition: color 0,3s;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+}
+
+/* SECCIÓN QUIÉNES SOMOS */
+#quienes-somos {
+  padding: 80px 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.836);
+  margin: 60px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+#quienes-somos h1 {
+  font-size: 2.5rem;
+  color: #2894ff;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 5px #8fcdff;
+}
+
+#quienes-somos p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 15px;
+  color: #000000;
+}
+
+
+#quienes-somos h2 {
+  margin-top: 40px;
+  color: #279aff;
+  text-shadow: 0 1px 5px #8fcdff;
+}
+
+#cta-button {
+  background: #eb6a01;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 1px 5px rgb(255, 168, 86);
+}
+
+#cta-button:hover {
+  background: #ff8800;
+  transform: scale(1.05);
+  box-shadow: 0 1px 5px rgb(255, 152, 55);
+}
+
+/* SERVICIOS */
+
+
+.ag-courses_box {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+
+
+.ag-courses_item {
+  flex-basis: calc(33% - 30px);
+  margin: 0 15px 30px;
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background: linear-gradient(to right, #2f293a, #000000);
+  overflow: hidden;
+  position: relative;
+}
+
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #FFF;
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background: linear-gradient(to right, #e27106, #fdfeff);
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background: linear-gradient(to right, #5742ac, #fdfeff);
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background: linear-gradient(to right, #3584df, #fdfeff);
+}
+
+/* CONTACTO */
+#contacto {
+  background: white;
+  padding: 80px 20px;
+  margin: 80px auto;
+  max-width: 850px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+#contacto h1 {
+  color: #003973;
+  margin-bottom: 40px;
+}
+
+#contact-form {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  font-size: 1rem;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgb(67, 180, 255);
+  outline: none;
+}
+
+#contact-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgb(67, 180, 255);
+}
+
+#contact-form button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px rgb(67, 180, 255);
+}
+
+footer {
+  background: #003973;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
